@@ -18,7 +18,12 @@ _Running on http://127.0.0.1:50021_
 
 **Run:**
 `docker run -it --rm --network=host -e PORT=<your_port> 
-<image_name>:latest`
+<image_name>:latest` <br> OR
+<br>
+`docker run -it --rm --network=host -p <external_port>:<inner_port> <image_name>:latest`
+<br></br>
+**Windows enjoyers should use:** 
+`docker run -it --rm -p <external_port>:<inner_port> <image_name>:latest`
 
 <br>**Additional docker commands:**
 ```
